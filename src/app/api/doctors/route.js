@@ -2,8 +2,7 @@ import connectDBase from "@/lib/mongodb";
 import dotenv from "dotenv";
 import Doctor from "@/models/doctors";
 
-dotenv.config(); // Load environment variables
-
+dotenv.config(); 
 export async function POST(req) {
   try {
     await connectDBase();
