@@ -17,8 +17,6 @@ async function connectDBase() {
   if (!cached.promise) {
     cached.promise = mongoose.connect(MONGODB_URI, {
       dbName: "doctor-filters", // optional: your DB name
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
     }).then((mongoose) => {
       console.log("MongoDB connected");
       return mongoose;
